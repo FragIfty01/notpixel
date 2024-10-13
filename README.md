@@ -62,7 +62,8 @@ run.bat
 
 Linux:
 ```shell
-run.sh
+chmod +x run.sh
+./run.sh
 ```
 
 # Linux manual installation
