@@ -51,6 +51,7 @@ Before you begin, make sure you have the following installed:
 You can download the [**repository**](https://github.com/vadymfedorets/notpixel) by cloning it to your system and installing the necessary dependencies:
 ```shell
 git clone https://github.com/vadymfedorets/notpixel
+cd notpixel
 ```
 
 Then you can do automatic installation by typing:
@@ -65,12 +66,24 @@ Linux:
 chmod +x run.sh
 ./run.sh
 ```
+#Install Python version 10 (Copy line by line)
+```shell
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.10
+python3.10 --version
+```
 
-# Linux manual installation
+Activate environment + Install loguru
+
 ```shell
 python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
+pip3 install loguru
+
 cp .env-example .env
 nano .env  # Here you must specify your API_ID and API_HASH, the rest is taken by default
 python3 main.py
@@ -79,6 +92,8 @@ python3 main.py
 # 1 - Run clicker
 # 2 - Creates a session
 ```
+
+After creating a session run Clicker !
 
 # Windows manual installation
 ```shell
